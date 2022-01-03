@@ -16,7 +16,7 @@ label, input, select {
     margin: 1%;
 }
 input {
-    background-color: purple;
+    background-color: none;
     color: white;
 }
 form .submit {

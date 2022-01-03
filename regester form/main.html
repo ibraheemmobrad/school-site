@@ -42,24 +42,23 @@
     <!-- start form -->
     <form action="#" method="get" class="regester-form" >
         <label for="foolName">الإسم الكامل(حسب البطاقة المدنية</label>
-        <input type="text" name="الإسم الكامل" id="foolName">
+        <input type="text" name="الإسم الكامل" required id="foolName">
         <label for="sityNumber">الرقم المدني</label>
-        <input type="number" name="الرقم المدني" id="sityNuber">
+        <input type="number" name="الرقم المدني" required id="sityNumber">
         <label for="dateOfBerth">تاريخ الميلاد</label>
-        <input type="date" name="تاريخ الميلاد" id="dateOfBerth">
+        <input type="date" name="تاريخ الميلاد" required id="dateOfBerth">
         <label for="phoneNuber">رقم الهاتف</label>
-        <input type="number" name="رقم الهاتف" id="phoneNuber">
+        <input type="number" name="رقم الهاتف" minlength="8" maxlength="8"  id="phoneNumber">
         <label for="eemail">البريد الإلكتروني</label>
-        <p>إن لم يوجد بريد إلكتروني يمكنكم كتابة البريد التالي:</p>
-        <p>student@school.moe</p>
         <input type="email" name="البريد الإلكتروني" id="eemail">
-        <label for="studyPhase"></label>
-        <select name="المرحلة" id="studyPhase">
+        <label for="studyPhase">المرحلة الدراسية</label>
+        <select name="المرحلة" required id="studyPhase">
             <option value="المرحلة الإبتداءية">المرحلة الإبتداءية</option>
             <option value="المرحلة المتوسطة">المرحلة المتوسطة</option>
             <option value="المرحلة الثانوية">المرحلة الثانوية</option>
         </select>
-        <select name="الصف" id="class">
+        <label for="class">الصف</label>
+        <select name="الصف" required id="class">
             <option value="الصف الأول">الصف الأول</option>
             <option value="الصف الثاني">الصف الثاني</option>
             <option value="الصف الثالث">الصف الثالث</option>
